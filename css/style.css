@@ -50,6 +50,8 @@ body {
     padding-bottom: 24px;
     padding-top: 24px;
     background: #FFFFFF;
+    border-bottom: 1px solid #E7E9FC;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
   
   .header > .container {
@@ -147,14 +149,25 @@ color: var(--text-color);
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 1440px;
+margin: auto;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+url(../image/hero-bg.jpg);
 }
+
+
+
 .hero-title {
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 color: #FFFFFF;
-background-color: var(--title-color);;
+;
 margin-bottom: 48px;
 max-width: 496px;
 margin-left: auto;
@@ -174,6 +187,9 @@ cursor: pointer;
 min-width: 169px;
 height: 56px;
 border: none;
+}
+
+.hero-wrap {
 }
 
 .hero-btn:hover {
@@ -347,6 +363,39 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--text-color);
+margin-bottom: 8px;
+}
+
+.main-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.main-soc-item {
+    width: 40px; height: 40px;
+}
+
+.main-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--pressed-state-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-soc-icon {
+    fill: var(--white-color);
+}
+
+.main-soc-icon:hover {
+    fill: var(--button-hover-color);
+}
+
+.main-soc-icon:focus {
+    fill: var(--button-hover-color);
 }
 
 .footer {
